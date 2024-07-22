@@ -1,11 +1,6 @@
 # The Odin Project: Calculator Final Foundations Project
 
-
-<p>
-  View the project live, here:
-  <button src="https://cjkowalski.github.io/calculator/">Live Project</button>
-</p>
-
+  View the project live, here: https://cjkowalski.github.io/calculator/
 
 In developing my calculator project with JavaScript, I utilized several fundamental concepts and techniques to create a functional and interactive user interface. I heavily relied on DOM manipulation to access and modify elements on the webpage using `document.getElementById()`. This allowed me to retrieve buttons for numerical inputs and operations, as well as the screen display where results were shown to the user.
 

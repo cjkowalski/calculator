@@ -1,10 +1,20 @@
-# The Odin Project: Calculator Final Foundatinos Project
+# The Odin Project: Calculator Final Foundations Project
+
+
+<p>
+  View the project live, here:
+  <button src="https://cjkowalski.github.io/calculator/">Live Project</button>
+</p>
+
 
 In developing my calculator project with JavaScript, I utilized several fundamental concepts and techniques to create a functional and interactive user interface. I heavily relied on DOM manipulation to access and modify elements on the webpage using `document.getElementById()`. This allowed me to retrieve buttons for numerical inputs and operations, as well as the screen display where results were shown to the user.
 
 <p align=center>
-  <img src="./images/github-screenshot-template-calculator.png" width=700>
+  <img src="./images/github-screenshot-template-calculator.png" width=700> 
 </p>
+
+
+
 
 Event handling played a crucial role in enabling user interaction. I implemented event listeners on buttons, from numeric digits to mathematical operations, to respond to user clicks. These listeners triggered specific functions like `setNumber()` for entering digits and managing operations such as addition, subtraction, multiplication, division, percentage calculations, and square root computations. Managing variables and their scopes was essential to maintain the calculator's state throughout different operations. Variables like `firstNumber`, `secondNumber`, `operation`, and `output` stored and processed user inputs and results dynamically. I used conditional statements to control the flow of operations based on conditions such as whether the calculator was active or if an operation was selected (`operation !== ''`).
 

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calulator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="top-spacer"></div>
+
+  <div id="calculator-body">
+
+    <div id="top-half">
+      <h1>pocket calculator</h1>
+    
+      <div id="glass">
+        <div id="sensor"></div>
+        <div id="screen">
+          <p id="screen-text"></p>
+          <p id="screen-led">8888888888</p>
+        </div>
+      </div>
+
+      <div id="bottom-half">
+        <button id="on-off-btn" class="off">
+          <div class="on-button-knob"></div>
+          <div class="on-button-top" id="on-text">Off</div>
+          <div class="on-button-bottom"></div>
+          <div class="on-button-base"></div>
+        </button>
+        <div id="button-layout">
+          <div id="left-side">
+
+            <div id="left-top-row">
+              <button id="clear" class="button tan">
+                <div class="button-top text">AC</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="neg" class="button tan">
+                <div class="button-top text">-</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="pos" class="button tan">
+                <div class="button-top text">+</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+            </div>
+            <div id="left-bottom-">
+              <button id="7" class="button black">
+                <div class="button-top text">7</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="8" class="button black">
+                <div class="button-top text">8</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="9" class="button black">
+                <div class="button-top text">9</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="4" class="button black">
+                <div class="button-top text">4</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="5" class="button black">
+                <div class="button-top text">5</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="6" class="button black">
+                <div class="button-top text">6</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="1" class="button black">
+                <div class="button-top text">1</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="2" class="button black">
+                <div class="button-top text">2</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="3" class="button black">
+                <div class="button-top text">3</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="zed" class="button black">
+                <div class="button-top text">0</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="dubZed" class="button black">
+                <div class="button-top text">00</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="decimal" class="button black">
+                <div class="button-top text">.</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+            </div>
+
+          </div>
+
+          <div id="right-side">
+              <div id="right-top">
+              <button id="A" class="button tan">
+                <div class="button-top text">A</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="B" class="button tan">
+                <div class="button-top text">B</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="percent" class="button tan">
+                <div class="button-top text">%</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="sqr-root" class="button tan">
+                <div class="button-top text">^</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="multiply" class="button tan">
+                <div class="button-top text">x</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+              <button id="divide" class="button tan">
+                <div class="button-top text">/</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+              </button>
+            </div>
+            <div id="right-bottom">
+              <div id="right-side-left-col">
+                <button id="plus" class="button tan">
+                  <div class="button-top text">+</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+                </button>
+                <button id="minus" class="button tan">
+                  <div class="button-top text">-</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+                </button>  
+              </div>
+              <div id="right-side-right-col">
+                <button id="equals" class="button gold">
+                  <div class="button-top text">=</div>
+                <div class="button-bottom"></div>
+                <div class="button-base"></div>
+                </button>
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+    </div>  
+    
+    <div class="chin"></div>
+
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

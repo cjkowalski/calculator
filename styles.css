@@ -1,0 +1,317 @@
+:root {
+  /* gold buttons */
+  --golden-brown: #90590eff;
+  --hunyadi-yellow: #eab25cff;
+
+  /* black buttons */
+  --outer-space: #4c5359ff;
+  --black: #060603ff;
+
+  /* tan body and buttons */
+  --bone: #d3ccbcff;
+  --khaki: #ad9d8fff;
+
+  /* screen */
+  --outer-space-2: #494c51ff;
+  --ash-gray: #a7b5a4ff;
+}
+
+body {
+  background-color: rgb(230, 226, 216);
+}
+
+#top-spacer {
+  height: 6vh;
+}
+
+#calculator-body {
+  margin: 0 auto;
+  background-color: var(--bone);
+  width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .01) 0px -36px 30px 0px inset, 
+  rgba(0, 0, 0, 0.01) 0px -79px 40px 0px inset,
+  rgba(0, 0, 0, 0.01) 0px 2px 3px,
+  rgba(0, 0, 0, 0.03) 0px 4px 2px,
+  rgba(0, 0, 0, 0.01) 0px 8px 4px,
+  rgba(0, 0, 0, 0.01) 0px 16px 8px,
+  rgba(0, 0, 0, 0.01) 0px 32px 16px;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  color: var(--khaki);
+  padding-bottom: 20px;
+  padding-top: 24px;
+  font-family: sans-serif;
+}
+
+#glass {
+  background-color: var(--outer-space-2);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#sensor {
+  width: 30%;
+  height: 13%;
+  background-color: var(--outer-space);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#screen {
+  background-color: var(--outer-space);
+  width: 90%;
+  height: 40%;
+  margin-top: px;
+  position: absolute;
+  top: 80px;
+  z-index: 0;
+}
+
+#screen-text {
+  color: rgb(47, 50, 54);
+  font-size: 2em;
+  font-family: "Press Start 2P";
+  text-align: right;
+  z-index: 0;
+}
+
+#screen-led {
+  color: rgb(72, 79, 86);
+  font-size: 2em;
+  font-family: "Press Start 2P";
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  right: 0px;
+}
+
+#button-layout {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+}
+
+#left-side,
+#right-side {
+  display: flex;
+  flex-direction: column;
+}
+
+#right-top, #left-bottom, #right-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#right-side {
+  min-width: 39%;
+}
+
+#right-side-left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+#on-off-btn {
+  margin: 13px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+  height: 30px;
+  width: 140px;
+  border: 0;
+  border-radius: 50px;
+  background-color: transparent;
+  z-index: 0;
+  position: relative;
+  right: -210px;
+}
+
+.on-button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #857669;
+  font-weight: 900;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  right: -40px;
+  transition: transform .4s;
+  z-index: 0;
+  content: 'On';
+}
+
+.on .on-button-top {
+  transform: translateX(-81px);
+}
+
+.on-button-knob {
+  width: 10px;
+  height: 26px;
+  border-radius: 50px;
+  background-color: rgb(221, 214, 198);
+  position: absolute;
+  z-index: 3;
+  left: 25px;
+  bottom: 2px;
+  transition: transform .4s;
+}
+
+.on .on-button-knob {
+transform: translateX(81px) !important;
+}
+
+.on-button-bottom {
+  width: 55px;
+  height: 26px;
+  border-radius: 50px;
+  left: 2px;
+  z-index: 2;
+  position: absolute;
+  background-color: #d3ccbc;
+  bottom: 2px;
+  transition: transform .4s;
+}
+
+.on .on-button-bottom {
+  transform: translateX(81px);
+}
+
+
+.on-button-base {
+  content: '';
+  z-index: -4;
+  background-color: #ad9d8f;
+  box-shadow:rgba(0, 0, 0, .2) 0px 0px 9px inset;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#equals {
+  height: 105px;
+}
+
+.chin {
+  height: 12px;
+}
+
+.button {
+  margin: 5px;
+  padding: 5px;
+  min-width: 54px;
+  height: 40px;
+  box-sizing: content-box;
+  border: 0;
+  background: transparent;
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  padding: 5px;
+  position: relative;
+  left: -6px;
+  font-family: sans-serif;
+  font-size: 2em;
+  color: #5f6163;
+  font-weight: 900;
+}
+
+.button:active .button-top {
+  transform: translateY(5px);
+}
+
+.button-top::after {
+  content: '';
+  z-index: -1;
+  background-image: radial-gradient(#d3ccbc, #cdc4b0);
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.button:active .button-top::after {
+  padding: 0px 2px;
+}
+
+.button-bottom {
+  position: absolute;
+  width: calc(100% - 1px);
+  height: calc(100% - 10px);
+  padding-top: 6px;
+  z-index: -2;
+  background-color: #ad9d8fff;
+  bottom: -7px;
+  left: -3px;
+  border-radius: 5px/16px 16px 8px 8px;
+}
+
+.button:active .button-bottom {
+padding-top: 0px;
+}
+
+.button-base {
+  position: absolute;
+  z-index: -3;
+  bottom: -9px;
+  left: -5px;
+  border-radius: 8px;
+  width: calc(100% + 3px);
+  height: calc(100% - 7px);
+  background-color: rgb(150, 134, 119);
+}
+
+
+
+/* BLACK BUTTONS COLOURS */
+.black .button-top {
+  color: #d6d3ce;
+}
+
+.black .button-bottom {
+  background-color: rgb(26, 26, 14);
+}
+
+.black .button-top::after {
+  background-image: radial-gradient(#4c5359, #444b51);
+}
+
+
+
+/* GOLD BUTTONS COLOURS */
+.gold .button-top {
+  color: #4d380b;
+}
+
+.gold .button-bottom {
+  background-color: rgb(157, 101, 24);
+}
+
+.gold .button-top::after {
+  background-image: radial-gradient(#eab25cff, rgb(221, 166, 84));
+}

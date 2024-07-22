@@ -10,6 +10,8 @@ Event handling played a crucial role in enabling user interaction. I implemented
 
 Throughout the project, I also applied string manipulation techniques, such as concatenation to build dynamic numbers and slicing strings to limit displayed digits, ensuring a clean user interface. Error handling was implemented to manage scenarios like division by zero and to handle long numbers through exponential notation for display. Overall, my calculator project effectively demonstrated how JavaScript can be used to create interactive web applications, combining DOM manipulation, event handling, conditional logic, and mathematical operations to deliver a seamless user experience.
 
+<br>
+
 ### CSS
 
 To structure the calculator visually, I utilized CSS positioning and flexbox for layout control. The calculator body was styled with a specific width, background color, padding, and border radius to achieve a cohesive design. Box shadows were added to enhance its appearance, creating a subtle depth effect. For the screen area, I employed absolute positioning to place it correctly within its container, setting its background color and ensuring it remained visually distinct. Elements within the screen, such as the display text and LED-like indicator, were styled for readability and aesthetic coherence, with appropriate font choices and text alignment.
